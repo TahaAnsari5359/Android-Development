@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_heading"
+        android:layout_width="419dp"
+        android:layout_height="50dp"
+        android:background="#D27FA5"
+        android:backgroundTint="#C7799D"
+        android:text="Maths Table Generator"
+        android:textAlignment="center"
+        android:textColor="#040404"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/id_num"
+        android:layout_width="248dp"
+
+        android:layout_height="39dp"
+        android:background="@drawable/edittext_border"
+        android:backgroundTintMode="screen"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#0F0F0F"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_heading"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/id_ent_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Number : -"
+        android:textColor="#0F0E0E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_heading"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="171dp"
+        android:layout_height="49dp"
+
+        android:scrollbarSize="20dp"
+        android:text="GENERATE"
+        android:textSize="24sp"
+        app:cornerRadius="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_num"
+        app:layout_constraintVertical_bias="0.97"
+        app:rippleColor="#95ECEC" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+
+        android:scrollbarSize="20dp"
+        android:text="CLEAR"
+        android:textSize="24sp"
+        app:cornerRadius="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/id_num"
+        app:layout_constraintVertical_bias="0.97"
+        app:rippleColor="#D9D933" />
+
+    <TextView
+        android:id="@+id/id_result_lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#1B1B1B"
+        android:textSize="34sp"
+        android:textStyle="bold"        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_num"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="341dp"
+        android:layout_height="417dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_num"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@drawable/table_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
