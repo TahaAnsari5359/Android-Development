@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView res_lab;
     private TextView total_lab;
+    private RadioButton year_radio;
+    private  RadioButton month_radio;
 
 
 
@@ -52,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
         yr = findViewById(R.id.textinp3);
         res_lab = findViewById(R.id.textView2);
         total_lab = findViewById(R.id.textView3);
+        year_radio = findViewById(R.id.radioButton4);
+        month_radio = findViewById(R.id.radioButton);
 
 
 
@@ -74,15 +79,23 @@ public class MainActivity extends AppCompatActivity {
                 double n2 = Double.parseDouble(g2);
                 int n3 = Integer.parseInt(g3);
 
-                double form = (n1*n2*n3)/100.0;
-                double total = n1+form;
-                res_lab.setText("Intrest: " + form);
-                total_lab.setText("Total Amount: " + total);
 
 
-                Toast.makeText(MainActivity.this,
-                        String.valueOf("Intrest: " + form),
-                        Toast.LENGTH_SHORT).show();
+                if (year_radio.isChecked()){
+                    double form = (n1*n2*n3)/100.0;
+                    double total = n1+form;
+                    res_lab.setText("Intrest: " + form);
+                    total_lab.setText("Total Amount: " + total);
+                } else if (month_radio.isChecked()) {
+                    double form_m = (n1*n2*n3)/(100.0*12);
+                    double total_m = n1+form_m;
+                    res_lab.setText("Intrest: " + form_m);
+                    total_lab.setText("Total Amount: " + total_m);
+
+                }
+
+
+
 
                 amt_prin.setText("");
                 intr.setText("");
