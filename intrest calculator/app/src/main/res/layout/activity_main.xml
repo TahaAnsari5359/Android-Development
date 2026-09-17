@@ -52,21 +52,21 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
-        android:layout_width="184dp"
-        android:layout_height="71dp"
+        android:layout_width="223dp"
+        android:layout_height="67dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.045">
+        app:layout_constraintVertical_bias="0.03">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textinp3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:hint="Enter Time (Year)"
+            android:hint="Tenure (Year) / (Month)"
             android:inputType="number"
             android:textColor="#E6DEDE" />
     </com.google.android.material.textfield.TextInputLayout>
