@@ -84,13 +84,13 @@ public class MainActivity extends AppCompatActivity {
                 if (year_radio.isChecked()){
                     double form = (n1*n2*n3)/100.0;
                     double total = n1+form;
-                    res_lab.setText("Intrest: " + form);
+                    res_lab.setText("Interest: " + form);
                     total_lab.setText("Total Amount: " + total);
                 } else if (month_radio.isChecked()) {
                     double form_m = (n1*n2*n3)/(100.0*12);
                     double total_m = n1+form_m;
-                    res_lab.setText("Intrest: " + form_m);
-                    total_lab.setText("Total Amount: " + total_m);
+                    res_lab.setText(String.format("Interest: %.2f", form_m));
+                    total_lab.setText(String.format("Total Amount: %.2f", total_m));
 
                 }
 
