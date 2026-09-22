@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="62dp"
+        android:layout_height="147dp"
+        android:backgroundTint="#173223"
+        android:text="R\nE\nS\nE\nT\n"
+        android:textColor="#EBE5E5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.204"
+        app:rippleColor="#3B5648" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="127dp"
+        android:layout_height="113dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#100101"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="145dp"
+        android:layout_height="61dp"
+        android:textColorHint="#0D0C0C"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:boxStrokeColor="#090909"
+        app:hintTextColor="#121212"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set Number"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#101010"
+            android:textColorHint="#181717"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="62dp"
+        android:layout_height="147dp"
+        android:backgroundTint="#173223"
+        android:text="S\nE\nT\n"
+        android:textAlignment="gravity"
+        android:textColor="#EBE5E5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.204"
+        app:rippleColor="#3C5749" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="140dp"
+        android:layout_height="57dp"
+        android:textColorHint="#232121"
+
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:boxStrokeColor="#101010"
+        app:hintTextColor="#101010"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="set limit"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#121212"
+            android:textColorHint="#121212"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="92dp"
+        android:layout_height="24dp"
+        android:text="Limit: "
+        android:textAlignment="center"
+        android:textColor="#141414"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="297dp"
+        android:layout_height="132dp"
+        android:backgroundTint="#3C5749"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="#F4F1F1"
+        android:textSize="80sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.293"
+        app:rippleColor="#173223" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="78dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#3B5648"
+        android:text="-"
+        android:textColor="#EBE9E9"
+        android:textSize="34sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#173223" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
