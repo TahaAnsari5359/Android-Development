@@ -20,3 +20,6 @@ AudioAttributes audioAttributes = new AudioAttributes.Builder()
         soundPool.setOnLoadCompleteListener((sp, sampleId, status) -> {
             soundLoaded = true;
         });
+
+
+soundPool.play(clickSoundId, 1, 1, 0, 0, 1);
