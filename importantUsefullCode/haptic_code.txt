@@ -1,0 +1,3 @@
+import android.view.HapticFeedbackConstants;
+
+v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
