@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/question_bg"
+    tools:context=".question5">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="326dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="40dp"
+        android:text="Which planet is known as the Red Planet?"
+        android:textAlignment="center"
+        android:textColor="#F0EBEB"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/q5op1"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#182B63"
+        android:text="Venus"
+        android:textColor="#EDE6E6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintVertical_bias="0.228"
+        app:rippleColor="#2196F3"
+        app:strokeColor="#E4DDDD"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/q5op2"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#182B63"
+        android:text="Jupiter"
+        android:textColor="#EDE6E6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintVertical_bias="0.37"
+        app:rippleColor="#2196F3"
+        app:strokeColor="#EBE1E1"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/q5op3"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#182B63"
+        android:text="Mars"
+        android:textColor="#EDE6E6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintVertical_bias="0.525"
+        app:rippleColor="#2196F3"
+        app:strokeColor="#F4EEEE"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/q5op4"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#182B63"
+        android:text="Saturn"
+        android:textColor="#EDE6E6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintVertical_bias="0.669"
+        app:rippleColor="#2196F3"
+        app:strokeColor="#F6EDED"
+        app:strokeWidth="2dp" />
+
+    <!-- RESULT -->
+
+    <!-- PREV / NEXT -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="245dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="303dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/q5_prev"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFB52E"
+            android:text="PREV"
+            android:textColor="#090000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            app:rippleColor="#FF5722" />
+
+        <Button
+            android:id="@+id/q5_nxt"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFB52E"
+            android:text="NEXT"
+            android:textColor="#100000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            app:rippleColor="#FF5722" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
